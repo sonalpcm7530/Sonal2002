@@ -95,7 +95,7 @@ This project analyzes patient health records to predict the likelihood of heart 
 ├── heart_disease_risk_2026.csv # Dataset
 ├── xgboost_model.pkl # Saved best model (XGBoost)
 ├── label_encoders.pkl # Saved label encoders
-├── main.py # FastAPI backend (if included)
+├── main.py # FastAPI backend
 ├── HTML frontend templates
 └── README.md
 
