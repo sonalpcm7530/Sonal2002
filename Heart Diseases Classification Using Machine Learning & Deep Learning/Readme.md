@@ -99,6 +99,40 @@ This project analyzes patient health records to predict the likelihood of heart 
 ├── HTML frontend templates
 └── README.md
 
+## How to Run
+Here's how to add or edit this section directly in your GitHub README.md — two ways depending on whether you want to do it on GitHub's website or locally.
+
+Option 1: Edit directly on GitHub (no git commands needed)
+
+Go to your repository on GitHub.
+Open README.md and click the pencil (edit) icon in the top right of the file view.
+Scroll to where you want the section (e.g., after "How to Run" or wherever fits), and paste this in:
+markdown
+## How to Run
+
+1. Clone the repository
+```bash
+   git clone <repo-url>
+   cd heart-disease-classification
+```
+
+2. Install dependencies
+```bash
+   pip install -r requirements.txt
+```
+
+3. Run the notebook to explore the analysis and retrain models
+```bash
+   jupyter notebook Heart_Diseases_Classification.ipynb
+```
+
+4. Run the FastAPI app for real-time predictions
+```bash
+   uvicorn app:app --reload
+```
+
+5. Open `http://127.0.0.1:8000` in your browser to use the prediction interface
+   
 ## Future Improvements
 Expand hyperparameter search space for further tuning
 Explore advanced feature engineering and additional data sources
