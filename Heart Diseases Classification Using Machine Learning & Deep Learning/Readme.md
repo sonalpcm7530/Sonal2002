@@ -91,12 +91,12 @@ This project analyzes patient health records to predict the likelihood of heart 
 | **XGBoost**         | **Best model — 89.44% accuracy**, tuned with GridSearchCV + RFE |
 
 ## Project Structure
-├── Heart_Diseases_Classification.ipynb # Main notebook (EDA, modeling, evaluation)
-├── heart_disease_risk_2026.csv # Dataset
-├── xgboost_model.pkl # Saved best model (XGBoost)
-├── label_encoders.pkl # Saved label encoders
-├── app.py # Streamlit frontend + inference
-├── requirements.txt # Python dependencies
+├── Heart_Diseases_Classification.ipynb   # Main notebook (EDA, modeling, evaluation)
+├── heart_disease_risk_2026.csv           # Dataset
+├── xgboost_model.pkl                     # Saved best model (XGBoost)
+├── label_encoders.pkl                    # Saved label encoders
+├── app.py                                # Streamlit frontend + inference
+├── requirements.txt                      # Python dependencies
 └── README.md
 
 ## Future Improvements
