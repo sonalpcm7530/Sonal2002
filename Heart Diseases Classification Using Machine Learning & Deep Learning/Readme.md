@@ -4,7 +4,7 @@ Predicting heart disease risk from clinical and lifestyle data, with a probabili
 
 ## Overview
 
-This project analyzes patient health records to predict the likelihood of heart disease and provide tiered, actionable health recommendations based on the predicted risk probability. Multiple machine learning and deep learning models were trained and compared, and the best model was deployed as a real-time prediction application.
+This project analyzes patient health records to predict the likelihood of heart disease and provide tiered, actionable health recommendations based on the predicted risk probability. Multiple machine learning and deep learning models were trained and compared, and the best model was deployed as a real-time prediction app.
 
 ## Dataset
 
@@ -69,14 +69,14 @@ This project analyzes patient health records to predict the likelihood of heart 
 
 9. **Model Deployment**
    - Trained model and label encoders saved using `joblib` (`xgboost_model.pkl`, `label_encoders.pkl`)
-   - Deployed as a real-time prediction web app using **FastAPI** (backend) and **HTML** (frontend), allowing users to input health data and instantly receive a classification result with a personalized health recommendation
+   - Deployed as a real-time prediction web app using **Streamlit**, allowing users to input health data through an interactive form and instantly receive a classification result with a personalized health recommendation
 
 ## Tech Stack
 
 - **Language:** Python
 - **Libraries:** NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, XGBoost, TensorFlow/Keras (ANN)
 - **Model Persistence:** joblib
-- **Deployment:** FastAPI, HTML
+- **Deployment:** Streamlit
 
 ## Results
 
@@ -95,46 +95,12 @@ This project analyzes patient health records to predict the likelihood of heart 
 ├── heart_disease_risk_2026.csv # Dataset
 ├── xgboost_model.pkl # Saved best model (XGBoost)
 ├── label_encoders.pkl # Saved label encoders
-├── main.py # FastAPI backend
-├── HTML frontend templates
+├── app.py # Streamlit frontend + inference
+├── requirements.txt # Python dependencies
 └── README.md
 
-## How to Run
-Here's how to add or edit this section directly in your GitHub README.md — two ways depending on whether you want to do it on GitHub's website or locally.
-
-Option 1: Edit directly on GitHub (no git commands needed)
-
-Go to your repository on GitHub.
-Open README.md and click the pencil (edit) icon in the top right of the file view.
-Scroll to where you want the section (e.g., after "How to Run" or wherever fits), and paste this in:
-markdown
-## How to Run
-
-1. Clone the repository
-```bash
-   git clone <repo-url>
-   cd heart-disease-classification
-```
-
-2. Install dependencies
-```bash
-   pip install -r requirements.txt
-```
-
-3. Run the notebook to explore the analysis and retrain models
-```bash
-   jupyter notebook Heart_Diseases_Classification.ipynb
-```
-
-4. Run the FastAPI app for real-time predictions
-```bash
-   uvicorn app:app --reload
-```
-
-5. Open `http://127.0.0.1:8000` in your browser to use the prediction interface
-   
 ## Future Improvements
-Expand hyperparameter search space for further tuning
-Explore advanced feature engineering and additional data sources
-Add model monitoring and periodic retraining pipeline
-Containerize the application with Docker for easier deployment
+- Expand hyperparameter search space for further tuning
+- Explore advanced feature engineering and additional data sources
+- Add model monitoring and periodic retraining pipeline
+- Containerize the Streamlit application with Docker for easier deployment
