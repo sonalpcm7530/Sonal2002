@@ -51,7 +51,7 @@ This project analyzes patient health records to predict the likelihood of heart 
 
 7. **Model Evaluation**
    - Compared models using accuracy, precision, confusion matrix, and classification report
-   - **XGBoost** achieved the best overall performance with **89.44% accuracy**
+   - **XGBoost** achieved the best overall performance with **87.77% accuracy**
 
 8. **Health Recommendation System**
 
@@ -88,7 +88,7 @@ This project analyzes patient health records to predict the likelihood of heart 
 | Naive Bayes         | Evaluated with CV                                     |
 | KNN                 | Evaluated across k = 1 to 40                          |
 | ANN                 | Trained for 50 epochs                                 |
-| **XGBoost**         | **Best model — 89.44% accuracy**, tuned with GridSearchCV + RFE |
+| **XGBoost**         | **Best model — 87.77% accuracy**, tuned with GridSearchCV + RFE |
 
 ## Project Structure
 
